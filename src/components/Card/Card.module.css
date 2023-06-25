@@ -1,0 +1,28 @@
+.main {
+    width: 300px;
+}
+
+.photo {
+    width: 300px;
+}
+
+/* Стилі за умовою */
+
+.blue {
+    background-color: blue;
+}
+
+.red {
+    background-color: red;
+}
+
+/* Композиція класів */
+
+.main.blue {
+    background-color: blue;
+}
+
+.main.red {
+    background-color: red;
+}
+
