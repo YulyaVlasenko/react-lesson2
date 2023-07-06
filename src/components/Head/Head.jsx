@@ -1,3 +1,6 @@
+import PropTypes from 'prop-types';
+
+
 // export const Head = ({ id, clas}) => {
 //   return <p id={id} className={clas}>I am Head</p>
 // }
@@ -13,7 +16,7 @@
 
 //далі ми рендеримо масив children
 
-export const Head = ({ id, clas, children }) => {
+export const Head = ({ id, clas, data, children }) => {
   console.log(children)
   return (
     <>
@@ -23,3 +26,10 @@ export const Head = ({ id, clas, children }) => {
   )
 }
 
+
+Head.propTypes = {
+  id: PropTypes.string.isRequired,
+  clas: PropTypes.string.isRequired,
+  data: PropTypes.arrayOf(PropTypes.string),
+  children: PropTypes.arrayOf(PropTypes.string | PropTypes.element)
+}
